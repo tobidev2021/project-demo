@@ -1,0 +1,6 @@
+<form class="login">
+    <span *ngIf="(!formGroup.valid && isSubmitted) || (!isValidLogin && isSubmitted)">Something is wrong with your credentials. Please try again.</span>
+    <input type="text" [formControl]="formGroup.controls['id']" placeholder="Id">
+    <input type="text" [formControl]="formGroup.controls['username']" placeholder="Username">
+    <button (click)="login()">Login</button>
+</form>

@@ -1,0 +1,25 @@
+.article-item-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 20px 20px;
+  padding: 20px;
+  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+  min-height: 40px;
+  background-color: #fff;
+  cursor: pointer;
+  .article-title {
+    margin-bottom: 10px;
+    span {
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .article-body {
+    span {
+      font-size: 14px;
+    }
+  }
+}

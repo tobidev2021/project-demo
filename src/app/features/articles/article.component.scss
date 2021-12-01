@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    background: #ffffff;
+    padding-left: 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+
+    .title {
+      padding: 20px;
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .create {
+      padding: 20px 40px;
+    }
+    
+  }
+}

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="header">
+        <div class="title">
+            <ng-container [ngSwitch]="currentRoute">
+                <span *ngSwitchCase="'/dashboard'">Articles list</span>
+                <span *ngSwitchCase="'/dashboard/create'">Create article</span>
+                <span *ngIf="isEdit">Edit article</span>
+            </ng-container>
+        </div>
+        <div class="create">
+            <button *ngIf="!isEdit && currentRoute != '/dashboard/create'" (click)="createArticle()">Create article</button>
+        </div>
+    </div>
+    <div class="content" role="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>

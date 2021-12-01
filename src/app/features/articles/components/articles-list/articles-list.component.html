@@ -1,0 +1,8 @@
+<div class="article-container">
+    <div class="search-container">
+        <input type="text" [formControl]="formGroup.controls['searchText']" placeholder="Search article ...">
+    </div>
+    <ng-container *ngFor="let article of articleDisplay">
+        <app-article-item [article]="article"></app-article-item>
+    </ng-container>
+</div>

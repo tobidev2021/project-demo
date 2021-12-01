@@ -1,0 +1,15 @@
+<div class="article-form-container">
+    <div class="form-article-detail-container">
+        <div class="article-title">
+           <input type="text" [formControl]="formGroup.controls['title']" class="input-title" placeholder="Title">
+        </div>
+        <div class="article-body">
+            <textarea class="input-body" [formControl]="formGroup.controls['body']" placeholder="Body"></textarea>
+        </div>
+    </div>
+    <div class="form-article-action-container">
+        <button class="save" (click)="save()">Save</button>
+        <button class="cancel" (click)="goToHomePage()">Cancel</button>
+    </div>
+    
+</div>
